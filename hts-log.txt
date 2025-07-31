@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 29 Jul 2025 22:54:29 at https://futureseedearth.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://futureseedearth.com/ -O1 "C:\My Web Sites\ngo website" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:56:02	Error: 	"Not Found" (404) at link https://futureseedearth.com/pricing.php (from https://futureseedearth.com/)
+22:56:36	Error: 	"Not Found" (404) at link https://futureseedearth.com/assets/img/Our Supporters/supporters7.png (from https://futureseedearth.com/)
+22:56:36	Error: 	"Not Found" (404) at link https://futureseedearth.com/login.html (from https://futureseedearth.com/)
+22:56:36	Error: 	"Not Found" (404) at link https://futureseedearth.com/assets/vendor/php-email-form/validate.js (from https://futureseedearth.com/)
+22:56:40	Error: 	"Not Found" (404) at link https://futureseedearth.com/index.html (from https://futureseedearth.com/portfolio.html)
+22:56:40	Error: 	"Not Found" (404) at link https://futureseedearth.com/active (from https://futureseedearth.com/blog.html)
+22:56:40	Error: 	"Not Found" (404) at link https://futureseedearth.com/dist/ (from https://futureseedearth.com/assets/vendor/aos/aos.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 11 seconds : 196 links scanned, 188 files written (72028210 bytes overall) [68186218 bytes received at 520505 bytes/sec], 5969793 bytes transferred using HTTP compression in 59 files, ratio 33%, 17.8 requests per connection
+(7 errors, 0 warnings, 0 messages)
