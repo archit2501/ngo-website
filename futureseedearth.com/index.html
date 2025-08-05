@@ -1,21 +1,1413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FutureSeed Earth Foundation - NGO for Sustainable Development</title>
-  <meta http-equiv="refresh" content="0; url=index-enhanced-hybrid.html" />
-  
-  <!-- Immediate JavaScript redirect as backup -->
-  <script>
-    window.location.href = 'index-enhanced-hybrid.html';
-  </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <title>FutureSeed Earth Foundation - Environmental Conservation & Sustainable Development</title>
+    <meta name="description" content="Leading NGO in environmental conservation, women's empowerment, and sustainable development. Impacting communities through tree plantation, renewable energy, and ecological restoration projects.">
+    <meta name="keywords" content="environmental conservation, sustainable development, women's empowerment, tree plantation, renewable energy, ecological restoration, climate action, NGO">
+    
+    <!-- Favicons -->
+    <link href="assets/img/cropped-site_logo-1-3.png" rel="icon">
+    <link href="assets/img/cropped-site_logo-1-3.png" rel="apple-touch-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            /* Enhanced Color System Inspired by Professional NGO Design */
+            --primary-green: #2E7D32;
+            --secondary-green: #4CAF50;
+            --accent-green: #66BB6A;
+            --light-green: #E8F5E8;
+            --forest-green: #1B5E20;
+            --mint-green: #A5D6A7;
+            
+            /* Professional Accent Colors */
+            --orange: #FF6B35;
+            --coral: #FF8A65;
+            --blue: #1976D2;
+            --navy: #0D47A1;
+            --yellow: #FFC107;
+            --red: #D32F2F;
+            
+            /* Neutral Professional Palette */
+            --white: #FFFFFF;
+            --cream: #FAFAFA;
+            --light-gray: #F5F5F5;
+            --medium-gray: #E0E0E0;
+            --border-gray: #EEEEEE;
+            --dark-gray: #424242;
+            --charcoal: #2C2C2C;
+            --text-dark: #212121;
+            --text-medium: #424242;
+            --text-light: #757575;
+            
+            /* Enhanced Shadows & Effects */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow: 0 2px 8px rgba(0,0,0,0.15);
+            --shadow-lg: 0 8px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.1);
+            
+            /* Animation Variables */
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--white);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+        
+        /* Enhanced Header System */
+        .header-top {
+            background: linear-gradient(135deg, var(--primary-green), var(--forest-green));
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .header-top .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            transition: var(--transition-fast);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .header-top .contact-info a:hover {
+            color: var(--mint-green);
+            transform: translateY(-1px);
+        }
+        
+        .header-top .social-links a {
+            color: white;
+            margin-left: 12px;
+            font-size: 16px;
+            transition: var(--transition-fast);
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .header-top .social-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px) scale(1.1);
+        }
+        
+        .main-header {
+            background: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-green);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .navbar-brand:hover {
+            color: var(--secondary-green);
+            transform: scale(1.02);
+        }
+        
+        .navbar-brand img {
+            height: 55px;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+        
+        /* Professional Navigation Menu */
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--text-dark);
+            padding: 12px 18px;
+            margin: 0 3px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-green);
+            background: var(--light-green);
+            transform: translateY(-1px);
+        }
+        
+        .dropdown-menu {
+            border: none;
+            box-shadow: var(--shadow-lg);
+            border-radius: var(--border-radius-lg);
+            padding: 15px 0;
+            margin-top: 8px;
+        }
+        
+        .dropdown-item {
+            padding: 10px 20px;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition-fast);
+        }
+        
+        .dropdown-item:hover {
+            background: var(--light-green);
+            color: var(--primary-green);
+            padding-left: 25px;
+        }
+        
+        /* Enhanced CTA Button */
+        .btn-donate {
+            background: linear-gradient(135deg, var(--orange), var(--coral));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border: none;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-donate:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: white;
+            background: linear-gradient(135deg, #e55a2b, var(--orange));
+        }
+        
+        /* Hero Section with Professional Layout */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.95), rgba(27, 94, 32, 0.95)), 
+                        url('assets/img/banner2.jpg') center/cover;
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            color: white;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+            font-weight: 400;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-stat {
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(10px);
+            min-width: 140px;
+        }
+        
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--mint-green);
+            display: block;
+        }
+        
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+            font-weight: 500;
+        }
+        
+        /* Enhanced Button Styles */
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--secondary-green), var(--accent-green));
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            font-size: 16px;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+            color: white;
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid white;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            background: transparent;
+        }
+        
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--primary-green);
+            transform: translateY(-2px);
+        }
+        
+        /* About Section with Professional Typography */
+        .about-section {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--coral));
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-medium);
+            margin-bottom: 25px;
+        }
+        
+        .about-highlight {
+            background: linear-gradient(135deg, var(--light-green), rgba(165, 214, 167, 0.3));
+            padding: 30px;
+            border-radius: var(--border-radius-lg);
+            border-left: 5px solid var(--secondary-green);
+            margin: 30px 0;
+        }
+        
+        /* Impact Statistics with Professional Design */
+        .impact-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-green), var(--forest-green));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .impact-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-50px, -50px) rotate(360deg); }
+        }
+        
+        .impact-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-xl);
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .impact-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .impact-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--mint-green);
+            display: block;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+        
+        .impact-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .impact-description {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+        
+        /* Programs Section with Card Design */
+        .programs-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid var(--border-gray);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .program-card-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-card-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(46, 125, 50, 0.1));
+            transition: var(--transition);
+        }
+        
+        .program-card:hover .program-card-image::before {
+            background: linear-gradient(45deg, transparent, rgba(46, 125, 50, 0.2));
+        }
+        
+        .program-card-content {
+            padding: 30px;
+        }
+        
+        .program-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+        
+        .program-description {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .program-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary-green), var(--accent-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin: -30px auto 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Get Involved Section */
+        .get-involved-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--light-green), rgba(232, 245, 232, 0.7));
+        }
+        
+        .involvement-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid var(--border-gray);
+        }
+        
+        .involvement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .involvement-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--orange), var(--coral));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            margin: 0 auto 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .involvement-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        
+        .involvement-description {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        /* Supporters Section */
+        .supporters-section {
+            padding: 80px 0;
+            background: white;
+            position: relative;
+        }
+        
+        .supporters-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(46, 125, 50, 0.02) 50%, transparent 100%);
+        }
+        
+        .supporters-container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .supporters-slider {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        .supporters-wrap {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            animation: supportersSlide 30s linear infinite;
+            will-change: transform;
+        }
+        
+        .supporter-item {
+            flex-shrink: 0;
+            width: 160px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--border-gray);
+            padding: 15px;
+        }
+        
+        .supporter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-green);
+        }
+        
+        .supporter-item img {
+            max-width: 100%;
+            max-height: 70px;
+            object-fit: contain;
+            filter: grayscale(0.8) opacity(0.7);
+            transition: var(--transition);
+        }
+        
+        .supporter-item:hover img {
+            filter: grayscale(0) opacity(1);
+            transform: scale(1.05);
+        }
+        
+        /* Supporters animation */
+        @keyframes supportersSlide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .supporters-wrap:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Responsive supporters */
+        @media (max-width: 768px) {
+            .supporter-item {
+                width: 140px;
+                height: 80px;
+                padding: 10px;
+            }
+            
+            .supporters-wrap {
+                gap: 25px;
+            }
+        }
+        
+        /* Enhanced Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--charcoal), var(--dark-gray));
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-section {
+            margin-bottom: 40px;
+        }
+        
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary-green);
+            border-radius: 2px;
+        }
+        
+        .footer-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: var(--transition-fast);
+        }
+        
+        .footer-link:hover {
+            color: var(--mint-green);
+            padding-left: 10px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            margin-top: 40px;
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .impact-number {
+                font-size: 2.8rem;
+            }
+            
+            .navbar-brand {
+                font-size: 20px;
+            }
+            
+            .navbar-brand img {
+                height: 45px;
+            }
+        }
+        
+        /* Loading Animation */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Scroll Animations */
+        [data-aos] {
+            pointer-events: none;
+        }
+        
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+    </style>
 </head>
+
 <body>
-  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
-    <h2>FutureSeed Earth Foundation</h2>
-    <p>Redirecting to homepage...</p>
-    <p>If you are not redirected automatically, <a href="index-enhanced-hybrid.html">click here</a>.</p>
-  </div>
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="contact-info">
+                        <a href="mailto:futureseedearth@outlook.com">
+                            <i class="bi bi-envelope"></i> futureseedearth@outlook.com
+                        </a>
+                        <a href="tel:+918700229846">
+                            <i class="bi bi-telephone"></i> +91 87002 29846
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-geo-alt"></i> New Delhi, India
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index-enhanced-hybrid.html">
+                    <img src="assets/img/cropped-site_logo-1-3.png" alt="FutureSeed Earth Foundation">
+                    FutureSeed Earth Foundation
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index-enhanced-hybrid.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="awards.html">Awards & Recognition</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Work
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="environmental-research.html">Environmental Research</a></li>
+                                <li><a class="dropdown-item" href="ecosystem-restoration.html">Ecosystem Restoration</a></li>
+                                <li><a class="dropdown-item" href="renewable-energy.html">Renewable Energy</a></li>
+                                <li><a class="dropdown-item" href="bhavati_blog.html">Women's Health (BHAVATI)</a></li>
+                                <li><a class="dropdown-item" href="hosla.html">Community Development (HOSLA)</a></li>
+                                <li><a class="dropdown-item" href="awareness-program.html">Awareness Programs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="ecosystem-restoration.html">VRAKSHAM (Tree Plantation)</a></li>
+                                <li><a class="dropdown-item" href="bhavati_blog.html">BHAVATI (Women's Health)</a></li>
+                                <li><a class="dropdown-item" href="hosla.html">HOSLA (Community Development)</a></li>
+                                <li><a class="dropdown-item" href="renewable-energy.html">Renewable Energy Projects</a></li>
+                                <li><a class="dropdown-item" href="environmental-research.html">Environmental Education</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <a href="donate.html" class="btn-donate">
+                        <i class="bi bi-heart-fill"></i> Donate
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">Creating Sustainable Communities for a Greener Tomorrow</h1>
+                        <p class="hero-subtitle">Empowering environmental conservation, women's health, and sustainable development across India through innovative programs and community partnerships.</p>
+                        
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="donate.html" class="btn-primary-custom">
+                                <i class="bi bi-heart-fill"></i> Donate Now
+                            </a>
+                            <a href="about.html" class="btn-outline-custom">
+                                <i class="bi bi-arrow-right"></i> Learn More
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                            <div class="hero-stat">
+                                <span class="hero-stat-number" data-count="50000">0</span>
+                                <span class="hero-stat-label">Trees Planted</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-number" data-count="25">0</span>
+                                <span class="hero-stat-label">Communities Served</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-number" data-count="1000">0</span>
+                                <span class="hero-stat-label">Women Empowered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="section-title">About FutureSeed Earth Foundation</h2>
+                    <p class="section-subtitle">Dedicated to environmental conservation and sustainable development since our inception</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p class="about-text">
+                        FutureSeed Earth Foundation is a leading environmental NGO committed to creating sustainable communities through innovative conservation programs, women's empowerment initiatives, and renewable energy projects.
+                    </p>
+                    
+                    <div class="about-highlight">
+                        <h4>Our Mission</h4>
+                        <p class="mb-0">To foster environmental consciousness and sustainable development by empowering communities, protecting ecosystems, and promoting renewable energy solutions for a healthier planet.</p>
+                    </div>
+                    
+                    <p class="about-text">
+                        Through our comprehensive approach combining environmental research, community engagement, and women's health programs, we work to address the interconnected challenges of climate change, social equity, and sustainable development.
+                    </p>
+                    
+                    <a href="about.html" class="btn-primary-custom">
+                        <i class="bi bi-arrow-right"></i> Read Our Full Story
+                    </a>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="assets/img/banner2.jpg" alt="About FutureSeed Earth Foundation" class="img-fluid rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="section-title text-white">Our Impact</h2>
+                    <p class="section-subtitle text-white">Measuring our contribution to environmental conservation and community development</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="impact-card">
+                        <span class="impact-number" data-count="50000">0</span>
+                        <h4 class="impact-label">Trees Planted</h4>
+                        <p class="impact-description">Contributing to reforestation and carbon sequestration efforts</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="impact-card">
+                        <span class="impact-number" data-count="25">0</span>
+                        <h4 class="impact-label">Communities</h4>
+                        <p class="impact-description">Rural and urban communities actively participating in our programs</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="impact-card">
+                        <span class="impact-number" data-count="1000">0</span>
+                        <h4 class="impact-label">Women Empowered</h4>
+                        <p class="impact-description">Women trained in sustainable practices and health awareness</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="impact-card">
+                        <span class="impact-number" data-count="15">0</span>
+                        <h4 class="impact-label">Projects</h4>
+                        <p class="impact-description">Active environmental and social development projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="section-title">Our Programs</h2>
+                    <p class="section-subtitle">Comprehensive initiatives addressing environmental and social challenges</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/VRAKSHAM1.jpg');">
+                            <div class="program-icon">
+                                <i class="bi bi-tree-fill"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Ecosystem Restoration</h3>
+                            <p class="program-description">Restoring degraded ecosystems through scientific research, community engagement, and sustainable land management practices.</p>
+                            <a href="ecosystem-restoration.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/renewable-energy.webp');">
+                            <div class="program-icon">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Renewable Energy</h3>
+                            <p class="program-description">Promoting clean energy solutions and energy efficiency programs to reduce carbon footprint and support sustainable development.</p>
+                            <a href="renewable-energy.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/bhavti1.jpg');">
+                            <div class="program-icon">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Women's Health</h3>
+                            <p class="program-description">Comprehensive health programs focusing on women's wellness, reproductive health, and community health education.</p>
+                            <a href="bhavati_blog.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/envi.webp');">
+                            <div class="program-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Environmental Research</h3>
+                            <p class="program-description">Conducting scientific research on environmental issues and developing evidence-based solutions for conservation challenges.</p>
+                            <a href="environmental-research.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/awareness.webp');">
+                            <div class="program-icon">
+                                <i class="bi bi-megaphone-fill"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Awareness Programs</h3>
+                            <p class="program-description">Educational initiatives to raise environmental consciousness and promote sustainable practices in communities.</p>
+                            <a href="awareness-program.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="program-card">
+                        <div class="program-card-image" style="background-image: url('assets/img/HOSLA1.jpg');">
+                            <div class="program-icon">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                        </div>
+                        <div class="program-card-content">
+                            <h3 class="program-title">Community Development</h3>
+                            <p class="program-description">Empowering communities through education, skill development, and sustainable livelihood programs like our HOSLA initiative.</p>
+                            <a href="hosla.html" class="btn-primary-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="section-title">Get Involved</h2>
+                    <p class="section-subtitle">Join our mission to create a sustainable and equitable future</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="involvement-card">
+                        <div class="involvement-icon">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h3 class="involvement-title">Donate</h3>
+                        <p class="involvement-description">Support our environmental and social programs with your generous contribution to create lasting impact.</p>
+                        <a href="donate.html" class="btn-primary-custom">Donate Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="involvement-card">
+                        <div class="involvement-icon">
+                            <i class="bi bi-person-plus-fill"></i>
+                        </div>
+                        <h3 class="involvement-title">Volunteer</h3>
+                        <p class="involvement-description">Join our team of dedicated volunteers and contribute your skills to meaningful environmental projects.</p>
+                        <a href="contact.html" class="btn-primary-custom">Become Volunteer</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="involvement-card">
+                        <div class="involvement-icon">
+                            <i class="bi bi-building-fill"></i>
+                        </div>
+                        <h3 class="involvement-title">Partner</h3>
+                        <p class="involvement-description">Collaborate with us as a corporate partner to amplify your social and environmental impact initiatives.</p>
+                        <a href="csr.html" class="btn-primary-custom">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supporters Section -->
+    <section class="supporters-section">
+        <div class="container supporters-container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="section-title">Our Supporters & Partners</h2>
+                    <p class="section-subtitle">We are grateful to our amazing supporters and partners who believe in our mission and help us create a sustainable future</p>
+                </div>
+            </div>
+            
+            <div class="supporters-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="supporters-wrap">
+                    <!-- First set of supporters -->
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters1.png" class="img-fluid" alt="Supporter 1">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters2.png" class="img-fluid" alt="Supporter 2">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters3.jpg" class="img-fluid" alt="Supporter 3">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters4.jpg" class="img-fluid" alt="Supporter 4">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters5.png" class="img-fluid" alt="Supporter 5">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters6.jpg" class="img-fluid" alt="Supporter 6">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters8.png" class="img-fluid" alt="Supporter 8">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters9.png" class="img-fluid" alt="Supporter 9">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters10.png" class="img-fluid" alt="Supporter 10">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/1.jpg" class="img-fluid" alt="Partner 1">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/3.jpg" class="img-fluid" alt="Partner 3">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/5.jpg" class="img-fluid" alt="Partner 5">
+                    </div>
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters1.png" class="img-fluid" alt="Supporter 1">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters2.png" class="img-fluid" alt="Supporter 2">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters3.jpg" class="img-fluid" alt="Supporter 3">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters4.jpg" class="img-fluid" alt="Supporter 4">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters5.png" class="img-fluid" alt="Supporter 5">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters6.jpg" class="img-fluid" alt="Supporter 6">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters8.png" class="img-fluid" alt="Supporter 8">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters9.png" class="img-fluid" alt="Supporter 9">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/Our Supporters/supporters10.png" class="img-fluid" alt="Supporter 10">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/1.jpg" class="img-fluid" alt="Partner 1">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/3.jpg" class="img-fluid" alt="Partner 3">
+                    </div>
+                    <div class="supporter-item">
+                        <img src="assets/img/clients/5.jpg" class="img-fluid" alt="Partner 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h3 class="footer-title">FutureSeed Earth Foundation</h3>
+                        <p class="text-light mb-4">Dedicated to environmental conservation, sustainable development, and community empowerment for a greener, healthier future.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="team.html" class="footer-link">Our Team</a>
+                        <a href="blog.html" class="footer-link">Blog</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Our Programs</h4>
+                        <a href="ecosystem-restoration.html" class="footer-link">Ecosystem Restoration</a>
+                        <a href="renewable-energy.html" class="footer-link">Renewable Energy</a>
+                        <a href="peoples-health.html" class="footer-link">Women's Health</a>
+                        <a href="environmental-research.html" class="footer-link">Environmental Research</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <p class="text-light mb-3"><i class="bi bi-geo-alt me-2"></i> 40, L Extension Part-2,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohan Garden, Uttam Nagar,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Delhi- 110059</p>
+                        <p class="text-light mb-2"><i class="bi bi-telephone me-2"></i> +91 87002 29846</p>
+                        <p class="text-light mb-2"><i class="bi bi-telephone me-2"></i> +91 95555 35758</p>
+                        <p class="text-light mb-2"><i class="bi bi-telephone me-2"></i> +91 95990 43000</p>
+                        <p class="text-light mb-2"><i class="bi bi-telephone me-2"></i> +91 94563 85958</p>
+                        <p class="text-light mb-2"><i class="bi bi-envelope me-2"></i> futureseedearth@outlook.com</p>
+                        <p class="text-light"><i class="bi bi-envelope me-2"></i> futureseedearth2019@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FutureSeed Earth Foundation. All rights reserved. | Designed with 💚 for the Planet</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current).toLocaleString();
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when in view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe impact section
+        const impactSection = document.querySelector('.impact-section');
+        if (impactSection) {
+            observer.observe(impactSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255,255,255,0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'white';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            
+            // Add fade-in animation to elements
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animationDelay = `${index * 0.1}s`;
+                    el.classList.add('animate');
+                }, 100);
+            });
+        });
+    </script>
 </body>
 </html>
