@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){$('.top-content').backstretch("img/1.jpg");$('#top-navbar-1').on('shown.bs.collapse',function(){$('.top-content').backstretch("resize");});$('#top-navbar-1').on('hidden.bs.collapse',function(){$('.top-content').backstretch("resize");});new WOW().init();});
