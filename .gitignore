@@ -105,3 +105,13 @@ Thumbs.db
 
 # htaccess files (if any contain sensitive info)
 # .htaccess
+
+# Mirror/HTTrack artifacts and external CDN mirrors
+ajax.googleapis.com/
+cmp.gatekeeperconsent.com/
+the.gatekeeperconsent.com/
+www.ezojs.com/
+hts-cache/
+hts-log.txt
+*.whtt
+"smile foundation"/

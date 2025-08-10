@@ -53,20 +53,20 @@ Future Seed Earth Foundation promotes sustainable practices and development in v
 futureseedearth.com/
 ├── assets/
 │   ├── css/
-│   │   └── style.css          # Main stylesheet with modern design
+│   │   ├── style.css          # Main stylesheet with modern design
+│   │   └── theme-modern.css   # Shared header/footer and theme styles
 │   ├── js/
-│   │   └── main.js           # Core JavaScript functionality
-│   ├── img/                  # Images and media files
-│   │   ├── clients/          # Partner/client logos
-│   │   └── Our Supporters/   # Supporter logos
-│   └── vendor/               # Third-party libraries
-├── index.html                # Redirect to modern homepage
-├── index-modern.html         # Modern homepage
-├── donate-modern.html        # Modern donation page
-├── about.html               # About us page
-├── contact.html             # Contact page
-├── team.html               # Our team page
-└── [other pages...]        # Additional content pages
+│   │   └── main.js            # Core JavaScript functionality
+│   ├── img/                   # Images and media files
+│   │   ├── clients/           # Partner/client logos
+│   │   └── Our Supporters/    # Supporter logos
+│   └── vendor/                # Third-party libraries
+├── index.html                 # Canonical homepage (modern)
+├── donate.html                # Canonical donation page (modern)
+├── about.html                 # About us page
+├── contact.html               # Contact page
+├── team.html                  # Our team page
+└── [other pages...]           # Additional program and content pages
 ```
 
 ## 🚀 Getting Started
@@ -79,8 +79,8 @@ futureseedearth.com/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/[your-username]/futureseed-earth-foundation.git
-   cd futureseed-earth-foundation
+   git clone https://github.com/archit2501/ngo-website.git
+   cd ngo-website
    ```
 
 2. **Local Development**
@@ -92,12 +92,13 @@ futureseedearth.com/
      ```
 
 3. **View the website**
-   - Open `http://localhost:8000` in your browser
+   - Open `futureseedearth.com/index.html` directly in your browser, or
+   - Serve the `futureseedearth.com/` folder with any static server and visit the shown URL
 
 ## 🎯 Key Pages
 
-- **Homepage** (`index-modern.html`): Modern landing page with hero, stats, and overview
-- **Donation** (`donate-modern.html`): Streamlined donation process with impact calculator
+- **Homepage** (`index.html`): Modern landing page with hero, stats, and overview
+- **Donation** (`donate.html`): Streamlined donation process with impact calculator
 - **About** (`about.html`): Detailed information about our mission and history
 - **Our Work**: Individual pages for each program (BHAVATI, HOSLA, etc.)
 - **Contact** (`contact.html`): Get in touch with our team
@@ -111,7 +112,7 @@ futureseedearth.com/
 
 ## 💝 How to Support
 
-1. **Donate**: Visit our [donation page](donate-modern.html)
+1. **Donate**: Visit our [donation page](futureseedearth.com/donate.html)
 2. **Volunteer**: Contact us through our [contact form](contact.html)
 3. **Partner**: Collaborate on CSR and sustainability projects
 4. **Spread Awareness**: Share our mission on social media
